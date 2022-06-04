@@ -23,7 +23,7 @@ public class ShoppingCartService {
     public Set<Integer> addGoodsToShoppingCart(List<Integer> goods) {
         Set<Integer> adding = new HashSet<>();
         for (int i=0; i< goods.size(); i++) {
-            if (dbGoods.getGoods().contains(goods.get(i)) && !shoppingCart.getShoppingCart().contains(goods.get(i))) {
+            if (dbGoods.getGoods().contains(goods.get(i))) {
                 shoppingCart.addToShoppingCart(goods.get(i));
                 adding.add(goods.get(i));
             }
