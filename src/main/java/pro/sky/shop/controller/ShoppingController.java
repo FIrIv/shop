@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Set;
 
 @RestController
-@RequestMapping("/store/order")
+@RequestMapping("/order")
 public class ShoppingController {
     private final ShoppingCartService shoppingCartService;
 
